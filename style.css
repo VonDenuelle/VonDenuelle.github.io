@@ -25,14 +25,9 @@ body, html{
   margin-top:20px;
   border-top: 2px solid #f3f3f3;
 }
-.hr-right{
-  margin-left: -10px;
-}
-.hr-align-right{
-width: 100%;
-}
+
 .container-left{
-  width: 40%;
+  width: 30%;
 }
 .img-holder{
   width: 90%;
@@ -47,7 +42,7 @@ width: 100%;
 }
 .educ,.skills{
   width: 100%;
-  margin-left: 12px;
+  margin-left: 22px;
 }
 .educ h3,.skills h3{
   font-size: 16px;
@@ -67,9 +62,42 @@ width: 100%;
 
 .container-right{
   margin-left: 10px;
-  width: 60%;
+  width: 70%;
 }
-.bio h5{
-  margin-top: -10px;
+.bio h2{
+  font-size: 32px;
+}
+.bio h4{
+  margin-top: -14px;
     color: #518ddb;
+}
+.contact,.basic{
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  margin-left: 40px;
+}
+.category p{
+  font-weight: bold;
+  color: #518ddb;
+line-height: 26px;
+}
+.content{
+  margin-left: 80px;
+}
+.content p{
+line-height: 28px;
+}
+.content a{
+  text-decoration: none;
+  color:#518ddb;
+}
+
+footer{
+  background-color: #333;
+  color:#fff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
 }
