@@ -6,15 +6,18 @@ const app = express();
 app.use(morgan('combined'))
 
 app.get('/', function(req,res){
-  res.sendFile(path.join(__dirname, 'UI', 'index.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ui/style.css', function(req,res){
-  res.sendFile(path.join(__dirname, 'UI', 'style.css'));
+app.get('/style.css', function(req,res){
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+app.get('/von.png', function(req,res){
+  res.sendFile(path.join(__dirname, 'ui', 'von.png'));
 });
 
 app.get('/article1', function(req,res){
-  res.send("one");
+  res.sendFile(path.join(__dirname, 'ui/Article', 'article1.html'));
 });
 app.get('/article2', function(req,res){
   res.send("2");
